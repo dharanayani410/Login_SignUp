@@ -82,12 +82,12 @@ class _CreateState extends State<Create> {
                           suffixIcon: IconButton(
                             onPressed: () {
                               setState(() {
-                                eyeActive = false;
+                                eyeActive = !eyeActive;
                               });
                             },
                             icon: (eyeActive == false)
-                                ? Icon(Icons.remove_red_eye_outlined)
-                                : Icon(Icons.remove_red_eye),
+                                ? Icon(Icons.remove_red_eye)
+                                : Icon(Icons.remove_red_eye_outlined),
                           )),
                     ),
                     ElevatedButton(
@@ -149,12 +149,12 @@ class _CreateState extends State<Create> {
                           suffixIcon: IconButton(
                             onPressed: () {
                               setState(() {
-                                eyeActive = false;
+                                eyeActive = !eyeActive;
                               });
                             },
                             icon: (eyeActive == false)
-                                ? Icon(Icons.remove_red_eye_outlined)
-                                : Icon(Icons.remove_red_eye),
+                                ? Icon(Icons.remove_red_eye)
+                                : Icon(Icons.remove_red_eye_outlined),
                           )),
                     ),
                     ElevatedButton(
